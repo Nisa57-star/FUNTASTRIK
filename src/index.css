@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono-numbers {
+    font-family: 'IBM Plex Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes currentFlowAnimation {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate-current-flow {
+  stroke-dasharray: 6 6;
+  animation: currentFlowAnimation 0.8s linear infinite;
+}
+
+.animate-current-flow-fast {
+  stroke-dasharray: 6 6;
+  animation: currentFlowAnimation 0.4s linear infinite;
+}
+
+.animate-current-flow-slow {
+  stroke-dasharray: 6 6;
+  animation: currentFlowAnimation 1.6s linear infinite;
+}
+
+/* Print styles for exporting student worksheets & certificates */
+@media print {
+  header, nav, .no-print {
+    display: none !important;
+  }
+  .print-area {
+    display: block !important;
+  }
+}
+

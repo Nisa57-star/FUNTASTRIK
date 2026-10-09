@@ -1,0 +1,7 @@
+{
+  "name": "LUMITRIK Virtual Lab",
+  "description": "Laboratorium Virtual Rangkaian Listrik interaktif berbasis Inquiry STEM untuk siswa SMP Fase D dan proyek paper circuit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
